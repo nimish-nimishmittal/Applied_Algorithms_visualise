@@ -1,0 +1,170 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AA PBL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel='icon' href='https://upload.wikimedia.org/wikipedia/commons/3/39/Identity_graph2.svg'>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg  fixed-top">
+    <a class="navbar-brand" href="index.html">Greedy Techniques</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">AA PBL</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link ">By Sourabh and Nimish</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="container section-gap  ">
+    <div class="row jumbotron mb-5">
+      <div class="col-lg-8">
+
+        <h1>Dynamic Technique</h1>
+        <p>
+          A dynamic algorithm is an approach used to solve problems by breaking them down into smaller subproblems and
+          solving each subproblem just once, storing the solutions to avoid redundant
+          computations. This technique typically involves using memoization or tabulation to efficiently compute the
+          solutions of overlapping subproblems. Dynamic algorithms are often applied to optimization problems and
+          problems that can be solved recursively with overlapping subproblems. They are known for their ability to
+          handle complex problems efficiently by exploiting the inherent structure of the problem.</p>
+        <h1>Greedy Technique</h1>
+        <p>Greedy is an algorithmic paradigm that builds up a solution piece by piece, always choosing the next piece
+          that offers the most obvious and immediate benefit. So the problems where choosing locally optimal also leads
+          to global solution are best fit for Greedy.</p>
+        <h1>Sorting Techniques</h1>
+        <p>
+          1. Selection Sort: Sorting algorithm that repeatedly selects the smallest element from unsorted portion
+          and moves it to the beginning. Time Complexity: O(n^2).
+          <br>
+          2. Bubble Sort: Sorting algorithm that repeatedly swaps adjacent elements if they are in the wrong order.
+          Time Complexity: O(n^2).
+          <br>
+          3. Insertion Sort: Sorting algorithm that builds the final sorted array one element at a time by inserting
+          each element into its correct position. Time Complexity: O(n^2).
+          <br>
+          4. Merge Sort: Sorting algorithm that divides the array into two halves, recursively sorts them, and then
+          merges the sorted halves. Time Complexity: O(n log n).
+          <br>
+          5. Quick Sort: Sorting algorithm that picks a pivot element and partitions the array around the pivot,
+          recursively sorting the subarrays. Time Complexity: O(n log n) on average, O(n^2) in worst case.</em>
+        </p>
+        <p><em>Created by <a href="https://github.com/SourabhGorai" style="color: #138496;;"> Sourabh Gorai</a><a
+              href="https://GitHub.com/nimish-nimishmittal" style="color: #138496;;"> Nimish Mittal</a></em></p>
+      </div>
+      <div class="col-lg-4">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_1LhsaB.json" background="transparent"
+          speed="1" style="width: 150px; height: 150px;" loop autoplay></lottie-player>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card text-white bg-dark">
+          <h4 class="card-header">0/1 Knapsack Problem</h4>
+          <div class="card-body">
+            <p class="card-title">The 0/1 knapsack problem involves maximizing the value of items to be put into a
+              knapsack without exceeding its weight capacity, where each item can only be included once (either 0 or 1).
+            </p>
+            <a href="01_knapsack.html" class="btn btn-info ">Try it Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-white bg-dark ">
+          <h4 class="card-header">Fractional Knapsack Problem</h4>
+          <div class="card-body">
+            <p class="card-title">The fractional knapsack problem involves maximizing the value of items to be put into
+              a knapsack without exceeding its weight capacity, allowing fractions of items to be taken.</p>
+            <a href="knapsack.html" class="btn btn-info ">Try it Out</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card text-white bg-dark ">
+          <h4 class="card-header">Sorting Algorithms Visualiser</h4>
+          <div class="card-body">
+            <p class="card-title">Sorting algorithms are procedures for arranging elements in a specific order, such as
+              numerical or alphabetical, and can vary in efficiency and approach, including popular methods like bubble
+              sort, insertion sort, selection sort, merge sort, quick sort, and heap sort.</p>
+            <a href="sortingvisualiser.html" class="btn btn-info ">Try it Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+      // The type of chart we want to create
+      type: 'line',
+
+      // The data for our dataset
+      data: {
+        labels: ['20000', '80000', '140000', '200000'],
+        datasets: [{
+          label: 'Huffman coding',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [0.001, 0.0017, 0.0025, 0.0032],
+
+        },
+        {
+          label: "Prim's Algorithm",
+          borderColor: 'rgb(99, 100, 132)',
+          data: [0.0018, 0.0029, 0.0041, 0.0056]
+        },
+        {
+          label: 'Knapsack Problem',
+          borderColor: 'rgb(132, 132, 99)',
+          data: [0.001, 0.002, 0.0025, 0.004]
+        },
+        {
+          label: 'Task Scheduling',
+          borderColor: 'rgb(100, 132, 255)',
+          data: [0.0015, 0.0021, 0.0032, 0.0042]
+        },
+        {
+          label: 'Single Source Shortest path',
+          borderColor: 'rgb(80, 200, 132)',
+          data: [0.0019, 0.0028, 0.0043, 0.0058]
+        },
+        ]
+      },
+      // Configuration options go here
+      options: {
+        title: {
+          display: true,
+          text: 'The time input-size graph of all these algorthms'
+        },
+
+      }
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+</html>
